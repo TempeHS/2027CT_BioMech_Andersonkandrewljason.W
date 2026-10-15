@@ -5,16 +5,16 @@ This is the folder structure and starter files for students completing the Tempe
 The bootcamp uses the **official [Arduino Sensor Kit](https://sensorkit.arduino.cc/)**: a Grove base shield and prewired modules that connect with Grove cables (no breadboard wiring needed for the kit modules). Your kit also includes a **Grove Line Finder** and a **Grove 3-pin Ultrasonic sensor**. The motor activities use real wiring with external power.
 
 ## Overview of Project
-What is ODM arm?
+###What is ODM arm?
 ‘ODM arm' or ‘Omni-Directional Mobility Arm' is a prosthetic arm where the main feature of a modern prosthetic arm is bionic articulation, which restores lost motor function by allowing the user to perform daily tasks like gripping, lifting, and reaching. The arm relies on a surface electromyography (sEMG) sensor to detect electrical activity in the remaining limb muscles. Advanced targeted muscle reinnervation (TMR) senses rerouted nerve signals. Grip sensors on the fingertips measure force to prevent crushing objects. Inertial measurement units (IMUs) track the arm's orientation and movement in space. The arm acts from all these different sensors in order to decide what to do.  
 
-Why does ODM arm exist?
+###Why does ODM arm exist?
 The 'ODM arm' is a prosthetic arm specifically designed for users to interact and live their lives normally without having any trouble, doubt or insecurity about their arm. For our patient Aaron - a patient with trans-radial amputations (right arm) and struggles with day to day tasks and hobbies. Aaron hopes to be able to get back to his hobby of rock climbing, but due to his severed arm, he is unable to continue to pursue this hobby. 
 
-Who is the ODM arm for?
+###Who is the ODM arm for?
 The ODM arm is needed for Aaron given that he has a trans-radial amputation on his right arm. We want to make a product that makes Aaron able to do day to day activities without any troubles, doubts or insecurities. It is also needed to fit his hobby of rock climbing so that he can still enjoy life. 
 
-How will ODM arm improve life?
+###How will ODM arm improve life?
 The ODM arm will improve Aaron's life as he will retain the same confidence before his arm was amputated, making his transition back to normal life much easier. 
 
 ## Overview of Patient
