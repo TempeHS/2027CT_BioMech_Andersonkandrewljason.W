@@ -1,22 +1,29 @@
-# TempeHS Arduino Bootcamp
+# Biomedical Prosthetic design for Aaron
 
 This is the folder structure and starter files for students completing the TempeHS Arduino Bootcamp.
 
 The bootcamp uses the **official [Arduino Sensor Kit](https://sensorkit.arduino.cc/)**: a Grove base shield and prewired modules that connect with Grove cables (no breadboard wiring needed for the kit modules). Your kit also includes a **Grove Line Finder** and a **Grove 3-pin Ultrasonic sensor**. The motor activities use real wiring with external power.
 
-## Getting started
+## Overview of Project
+What is ODM arm?
+‘ODM arm' or ‘Omni-Directional Mobility Arm' is a prosthetic arm where the main feature of a modern prosthetic arm is bionic articulation, which restores lost motor function by allowing the user to perform daily tasks like gripping, lifting, and reaching. The arm relies on a surface electromyography (sEMG) sensor to detect electrical activity in the remaining limb muscles. Advanced targeted muscle reinnervation (TMR) senses rerouted nerve signals. Grip sensors on the fingertips measure force to prevent crushing objects. Inertial measurement units (IMUs) track the arm's orientation and movement in space. The arm acts from all these different sensors in order to decide what to do.  
 
-1. Click **Use this template** then **Create a new repository**
-2. Name it using the class convention: `2027CT_Arduino_Bootcamp_FirstName.Initial` (e.g. `2027CT_Arduino_Bootcamp_Ben.J`)
-3. Open your repository in a **GitHub Codespace** (the **Arduino to Codespaces Bridge** extension installs automatically)
-4. Plug in your Arduino Uno, click the bridge icon in the left navigation bar, run the server, then open the bridge
-5. Upload a sketch through the bridge and you are ready to code
+Why does ODM arm exist?
+The 'ODM arm' is a prosthetic arm specifically designed for users to interact and live their lives normally without having any trouble, doubt or insecurity about their arm. For our patient Aaron - a patient with trans-radial amputations (right arm) and struggles with day to day tasks and hobbies. Aaron hopes to be able to get back to his hobby of rock climbing, but due to his severed arm, he is unable to continue to pursue this hobby. 
 
-Full setup instructions are on the learning platform: **Arduino Bootcamp, Page 1: What is Mechatronics?**
+Who is the ODM arm for?
+The ODM arm is needed for Aaron given that he has a trans-radial amputation on his right arm. We want to make a product that makes Aaron able to do day to day activities without any troubles, doubts or insecurities. It is also needed to fit his hobby of rock climbing so that he can still enjoy life. 
 
-## The working rhythm
+How will ODM arm improve life?
+The ODM arm will improve Aaron's life as he will retain the same confidence before his arm was amputated, making his transition back to normal life much easier. 
 
-**Write** the code in your Codespace, **Upload** it to the Arduino, **Test** it with the sensor kit, then **Commit and Push** every working solution with a clear message and a photo of your build.
+## Overview of Patient
+
+## High Level Pictorial
+<img width="751" height="561" alt="Screenshot 2026-10-15 113227" src="https://github.com/user-attachments/assets/399a46f4-fee9-487c-b783-60dbf239bb4c" />
+
+
+
 
 ## Folder guide
 
@@ -33,8 +40,6 @@ Full setup instructions are on the learning platform: **Arduino Bootcamp, Page 1
 | `09.I2C`                    | I2C bus, OLED display and sensors             | OLED + I2C sensors                            |
 | `10.OOP`                    | Object-Oriented Programming                   | LED D6 + built-in LED                         |
 | `11.myProjects`             | Capstone builds                               | your choice                                   |
-
-Each sketch's header comment lists the learning intention, success criteria and Grove ports for that activity. Folders also contain **optional breadboard schematics** (`Bootcamp-*.png`) showing how the same circuits are wired by hand without Grove modules, for anyone who wants to look under the hood.
 
 ## Standard Grove ports
 
