@@ -18,12 +18,12 @@ The ODM arm is needed for Aaron given that he has a trans-radial amputation on h
 The ODM arm will improve Aaron's life as he will retain the same confidence before his arm was amputated, making his transition back to normal life much easier. 
 
 ## Overview of Patient
+Aaron is a current amputee of an unfortunate hiking incident that crushed his right forearm and caused him to perform a mid-section trans-radial amputations. This had left him with no adherent scare tissue, although his ulnohumeral joint (in the elbow) is still intact and can articulate normally. The result of this is that he can no longer participate in rock climbing or hiking and has made performing daily activities difficult and he wishes for a sports-based prosthetic to meet his wish of being able to finally rock climb.
 
 ## High Level Pictorial
 <img width="751" height="561" alt="Screenshot 2026-10-15 113227" src="https://github.com/user-attachments/assets/399a46f4-fee9-487c-b783-60dbf239bb4c" />
 
-
-
+## Components
 
 ## Folder guide
 
