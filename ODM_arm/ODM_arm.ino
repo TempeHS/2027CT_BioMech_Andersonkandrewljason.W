@@ -1,8 +1,12 @@
 void setup() {
   button_sensor_setup(); // creates a on and off button for the entire arm
+    pinMode(SERVO_PIN, OUTPUT);
+  pinMode(BUTTON_PIN, INPUT);   // this pin will RECEIVE signals
+  Serial.begin(115200);
+}
   oled_sensor_setup(); // has a screen for arm details
   servo_motor_setup(); // has a screen for arm details
-}
+
 
 void loop() {
   get_button_pressed // button has turned on the arm
