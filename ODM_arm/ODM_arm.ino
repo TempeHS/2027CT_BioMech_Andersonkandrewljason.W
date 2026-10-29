@@ -8,4 +8,5 @@ void loop() {
   get_button_pressed // button has turned on the arm
   get_screen_on // screen is on
   get_servo_movement // all motors have movement
+
 }
