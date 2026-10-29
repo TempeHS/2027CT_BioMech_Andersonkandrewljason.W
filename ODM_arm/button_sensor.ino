@@ -8,11 +8,11 @@ void setup() {
     pinMode(button, INPUT);
 }
 
-void loop(){
+void button_sensor_loop(){
     button_state = digitalRead(button);
 
     if (button_state == HIGH) {
-        Serial.println("Button pressed!");
+        Serial.println("Arm turned on!");
     }
 delay(50);
 }
