@@ -1,5 +1,4 @@
 #define button 4
-#define button 3
 
 int button_state = 0;
 
