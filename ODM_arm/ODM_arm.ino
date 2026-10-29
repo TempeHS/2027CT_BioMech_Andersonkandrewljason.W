@@ -1,19 +1,11 @@
-#include <Servo.h>
-
-const int SERVO_PIN = 3;  // Grove connector to D3 (PWM capable)
-const int POT_PIN = A0;   // Grove Potentiometer on A0
-
-Servo myServo;
-
-void setup() {
-  button_sensor();
-  oled_sensor();
-  servo_motor();
-
+void setup () {
+  button_sensor_setup(); // creates a on and off button for the entire arm
+  oled_sensor_setup(); // has a screen for arm details
+  servo_motor_setup(); // has a screen for arm details
 }
 
-void loop (){
-
-
+void loop() {
+  get_button_pressed // button has turned on the arm
+  get_screen_on // screen is on
+  get_servo_movement // all motors have movement
 }
-
