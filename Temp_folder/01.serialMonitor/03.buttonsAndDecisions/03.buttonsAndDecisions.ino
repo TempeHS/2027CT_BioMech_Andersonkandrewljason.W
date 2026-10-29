@@ -37,22 +37,35 @@
     https://www.arduino.cc/reference/en/language/functions/digital-io/digitalread/
 */
 
-#define button 4
+const int buttonPin = 4;
+const int ledPin = 6;
 
-int button_state = 0;
+bool ledState = false;
+int lastButtonState = HIGH; // not pressed (pull-up idle state)
 
-const int BUTTON_PIN = 4;  // Grove Button on D4
-const int LED_PIN = 3;     // Grove SERVO on D3
-
-void setup () {
-  pinMode(LED_PIN, OUTPUT);
-  pinMode(BUTTON_PIN, INPUT);   // this pin will RECEIVE signals
+void setup() {
+  pinMode(buttonPin, INPUT_PULLUP); // button pulls LOW when pressed
+  pinMode(ledPin, OUTPUT);
   Serial.begin(115200);
 }
 
-void loop () {
-  int buttonState = digitalRead(LED_PIN);
-  Serial.println(buttonState);
-  delay(50);
-}
+void loop() {
+  int buttonState = digitalRead(buttonPin);
 
+  // Detect a new press: state went from HIGH (released) to LOW (pressed)
+  if (buttonState == LOW && lastButtonState == HIGH) {
+    ledState = !ledState; // toggle LED state
+    delay(50); // simple debounce
+  }
+
+  lastButtonState = buttonState;
+
+  digitalWrite(ledPin, ledState ? HIGH : LOW);
+
+  Serial.print("Button: ");
+  Serial.print(buttonState == LOW ? "Pressed" : "Released");
+  Serial.print("  LED state: ");
+  Serial.println(ledState ? "ON" : "OFF");
+
+  delay(10);
+}
