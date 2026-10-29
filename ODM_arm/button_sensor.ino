@@ -1,19 +1,19 @@
-void button_sensor_setup () {
 #define button 4
+#define button 3
 
 int button_state = 0;
 
-void setup() {
-    Serial.begin(9600);
-    pinMode(button, INPUT);
+const int BUTTON_PIN = 4;  // Grove Button on D4
+const int SERVO_PIN = 3;     // Grove SERVO on D3
+
+void button_sensor_setup () {
+  pinMode(SERVO_PIN, OUTPUT);
+  pinMode(BUTTON_PIN, INPUT);   // this pin will RECEIVE signals
+  Serial.begin(115200);
 }
 
-void button_sensor_loop(){
-    button_state = digitalRead(button);
-
-    if (button_state == HIGH) {
-        Serial.println("Arm turned on!");
-    }
-delay(50);
-}
+void button_sensor_loop () {
+  int buttonState = digitalRead(BUTTON_PIN);
+  Serial.println(buttonState);
+  delay(50);
 }
