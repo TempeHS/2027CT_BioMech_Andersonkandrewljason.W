@@ -1,14 +1,9 @@
-void oled_sensor_setup () {/*
-*/
-#include <Wire.h>
-#include "Arduino_SensorKit.h"
-
-void setup()
+void oled_sensor_setup() {
   Oled.begin();
   Oled.setFlipMode(true);   // sets the rotation of the screen
+}
 
-
-void loop()
+void get_screen_on_loop(){
   int random_value = analogRead(A0);   // read value from A0
 
   Oled.setFont(u8x8_font_chroma48medium8_r);
