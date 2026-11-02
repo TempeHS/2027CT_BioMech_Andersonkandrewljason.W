@@ -1,4 +1,3 @@
-#define button 4
 
 int button_state = 0;
 
@@ -11,7 +10,7 @@ void button_sensor_setup () {
   Serial.begin(115200);
 }
 
-void button_sensor_loop () {
+void get_button_pressed_loop () {
   int buttonState = digitalRead(BUTTON_PIN);
   Serial.println(buttonState);
   delay(50);
