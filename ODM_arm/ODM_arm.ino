@@ -15,10 +15,18 @@ void setup() {
   button_sensor_setup(); // creates a on and off button for the entire arm
   oled_sensor_setup(); // has a screen for arm details
   servo_motor_setup(); // has a screen for arm details
+
+  myServo.write(0); // Start with the arm in its off position.
 }
 
 void loop() {
   get_button_pressed_loop(); // button has turned on the arm
   get_screen_on_loop(); // screen is on
-  get_servo_movement_loop(); // all motors have movement
+
+  // Share the button's toggle state between both outputs.
+  if (button_state) {
+    get_servo_movement_loop();
+  } else {
+    myServo.write(0);
+  }
 }
