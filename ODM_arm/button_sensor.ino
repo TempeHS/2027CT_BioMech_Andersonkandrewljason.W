@@ -22,5 +22,5 @@ void get_button_pressed_loop() {
   Serial.print("  LED state: ");
   Serial.println(ledState ? "ON" : "OFF");
 
-  delay(10);
+  // delay(10) removed: loop() now has the delay
 }

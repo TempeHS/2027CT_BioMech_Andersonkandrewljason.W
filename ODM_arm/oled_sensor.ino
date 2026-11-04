@@ -1,4 +1,5 @@
 bool oledOn = false;           // set by the button
+bool lastOledState = false; // remembers what the screen last showed
 int lastOledButtonState = HIGH; // remembers the previous reading
 
 
@@ -10,7 +11,6 @@ void oled_sensor_setup() {
 
 void get_screen_on_loop() {
   int buttonState = digitalRead(BUTTON_PIN); // Input
-  Serial.println(buttonState); // raw value, remove once it works
 
   // new press only: HIGH -> LOW
   if (buttonState == LOW && lastOledButtonState == HIGH) {
@@ -20,13 +20,11 @@ void get_screen_on_loop() {
   }
   lastOledButtonState = buttonState;
 
-
   if (oledOn) {
     Oled.setFont(u8x8_font_chroma48medium8_r);
     Oled.setCursor(51, 35);  // set the coordinates
     Oled.print("Battery:76%");  // print the text
     Oled.refreshDisplay();  // update the display
   }
-  delay(50);
 }
 
