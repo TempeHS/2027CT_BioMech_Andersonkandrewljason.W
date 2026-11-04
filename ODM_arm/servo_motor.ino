@@ -4,8 +4,8 @@ void servo_motor_setup() {
 }
 
 void get_servo_movement_loop() {
-  // Share the LED's toggle state without pausing button checks.
-  if (button_state == HIGH) {
+  // ledState is set by the button code, so the servo always matches the LED
+  if (ledState) {
     myServo.write(180);
   } else {
     myServo.write(0);
